@@ -1,0 +1,11 @@
+
+.table_header {  font-family: "Courier New", Courier, mono; font-size: 12pt; font-weight: bold; color: #CC3333; text-decoration: none; background-color: #E9E9E9}
+.header {  font-family: "Times New Roman", Times, serif; font-size: 15pt; color: #336633}
+.table_data { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000; text-decoration: none}
+.table_data_mon { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #339966; text-decoration: underline}
+.table_data_day { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #339966; text-decoration: underline }
+.table_data_total { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000; text-decoration: none ; font-weight: bold}
+.table_foother { font-family: "Courier New", Courier, mono; font-size: 12pt; font-weight: bold; color: #CC3333; text-decoration: none; background-color: #E9E9E9 }
+.table_top_header { font-family: "Courier New", Courier, mono; font-size: 14pt; font-weight: bold; color: #0000CC; text-decoration: none; background-color: #E9E9E9 }
+.created_date {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; font-style: italic; color: #999999}
+.domains { font-family: Georgia, "Times New Roman", Times, serif; font-size: 15pt; color: #990000; text-decoration: none }

@@ -1,0 +1,11 @@
+		ISOQLOG FAQ
+	-----------------------------
+
+Q. I notice that I can see size of sent messages, but I can't see size of incoming
+   meesages
+
+A. Because logs only show size for "from" addresses, but not "to" addresses. Additionally
+   because of the inconsistency of log files, one ID may show up for other mails as well.
+   But this will be fixed in isoqlog 3.0
+
+

@@ -1,0 +1,110 @@
+
+			Isoqlog Versiyon Degisiklikleri
+
+-  Gelistirme Versiyonu
+
+
+-  Version 2.2-BETA  29 Nisan 2004
+   * Parser modulu yeniden yazildi. Guvenlik taramasi yapildi, fixler yapildi.
+   * Postfix Virtual Domain handling
+   * Lukas Maly im at lukasmaly.net tarafindan yazilan Cek dil destegi eklendi.
+   * Marco Erra <mare at erra.myip.org> tarafindan exim mail sunucu destegi eklendi
+   * Danis translation by "Christian Kurek" <archdandy at spar-es dot dk>
+   * Romanian dil dosyasi Gelu.Constantin at anofm.ro tarafindan yollandi.
+   * missing fclose()'s added. Thanks manu - manu at asp.be
+   * "Koh Swee Meng" <swee_meng ~  phoenix-gamestudios.com> Parser.c:44 hatasini duzelten
+     bir yama yollamistir.
+   * Autotool betikleri en bastan yazildi
+
+
+-  Version 2.1 Ocak 03, 2003
+   * Birkac dil dosyasi eklendi
+   * 2.0-current de yapilan hata duzeltemeleri ve yamalari bu release' eklendi 
+     
+
+-  Version 2.0-current  Haziran 17, 2002
+
+   * Postfix bug 'i duzeltildi
+   * Html.c:1322 "%d" -> "%d/"
+
+
+-  Versiyon 2.0 Temmuz 16, 2002
+   
+   * lowercase fonksiyonundaki sorun giderildi.
+   * configure script i duzeltildi
+   * Dil destegi aktif hale getirildi
+   * Yukari ve Ana sayfa butonlari eklendi
+
+-  Versiyon 2.0beta Haziran 15, 2002
+
+ * Yeni Isoqlog tamamen C dili ile en bastan yazilmistir. 
+ * Daha hizli log analiz ve raporlama gerceklestirilmistir. 
+ * Coklu MTA destegi eklenmistir (Isoqlog qail(multilog/syslog)
+   sendmail and postfix mail sunucusu loglarini analiz edebilir. 
+ * HTML Templates. Html templates ve .css dosyalarini degistirerek istatistik
+   dosyalarinizin gorunusunu tamamen degistirebilirsiniz. 
+ * Dunun istatisklerinin taramasi yerine artik bugununde istatistikleri taranabilir.
+ * Multilog-rotate temizlendi. Boylece Isoqlog butun log/ dizinini okur ve 
+   sadece o gunun maillerini isler.
+ * Az trafikli mail server problemi cozuldu. Boylece current dosyasi gunun sonunda rotate       islemine ugramasa bile problemle karsilasilmaz. 
+ * Onceki bilgiler ikili log formatinda tutularak programin bilgileri daha hizli    islemsi     saglanmistir.
+   of history.
+ * Daha fazla ozellestirilme destegi verilmistir.
+   Programi tekrar derlemeden MTA log dosyasinin format degisiklikleri havada uygulanabilir
+   
+ * GNU stilinde  ./configure && make && make install kurulumu oldukca kolaylastirmistir.
+
+-  Versiyon 1.7   Mayis  17 2001
+
+ * R. Hutchinson hutch@midwales.com tarafindan degisiklikler yapilmistir:
+ * Html uzerinde degisiklikler yapildi ve  MBorKBs eklenid ayrica eger 0 olarak
+ 	ayarlanirsa ekrana cikti vermeyen $Debug degiskeni eklendi
+ * Daha fazla hata mesajlari gorulur. 
+ * Kod kolay okunulabilirlik icin tab ile tekrar formatlanmistir.
+ * Perl qq fonksiyonlari kullanilarak farkli bir koddan html kodu cagrilmasi kolay hale       getirilmistir.
+ * Yeni sub 'lar:
+   &makehtmlheader
+   &makemenu
+   &display_time
+ * EnderUnixTeam sub' inin degismesi degistirilmemistir .
+
+-  Versiyon 1.5 Stable  12 Nisan 2001
+
+ * Ispanyolca dil destegi eklenmistir (  cad_vga <cad_vga@yahoo.com>   ) (18    Nisan  2001)
+ * Portekizce dil destegi (Thanks to Edson Lima Monteiro <boni@usp.br> ) (16 Nisan 2001)
+ * 0 MB problemlemi duzeltildi . Eger domain'e gelen mail buyuklugu 1 MB'tan kucukse KB kullanilacaktir. 
+ * Dil destegi eklenmistir.
+ * Garip < karakteri problemi giderilmistir.
+
+-  Version 1.5 	6 Mart  2001
+
+ * Butun kod en basta yazilmistir.
+ * multilog destegi verilmistir.
+ * Kullanici tabanli en cok gelen mail destegi her bir domain icin verilmistir. 
+ * Kullanici tabanli en cok giden mail destegi her bir domain icin verilmistir. 
+ * Kullanici tabanli en cok mail, toplam skor tanimlanan herbir domain icin verilmistir.
+ * Kullanici tabanli mail buyuklugu destegi verilmisitir.
+ * Domain tabali en cok mail destegi verilmistir. 
+ * En cok kullanilan kismindaki  - problemi duzeltilmistir. 
+
+ * Giving Full Langugaga support (15 Mar 2001)
+ * 0 MB values changed to KB when total  byte values less than 1 MB (15 Mar  2001)
+ * More clear Documentation (16 Mar 2001  Thanks to  Murat Balaban ) 
+
+ - Versiyon 1.4 15 Subat 2001
+
+ * Coklu domain destegi verilmistir.
+ * En cok kullanilan domain duzeltilmistir.
+ * Yanlis gun tarihi problemi duzeltilmistir.
+
+ - Version 1.3.1  1 Ekim 2000
+
+ * Yil hatasi duzeltilmistir.  
+ * Version 1.2 28 November 2000
+
+ * Domain hatasi duzeltilmistir.
+
+
+http://www.enderunix.org 
+
+Thu Apr 29 11:04:06 EEST 2004

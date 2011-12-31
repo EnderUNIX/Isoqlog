@@ -1,0 +1,66 @@
+Isoqlog 2.2.x INSTALL
+
+- Installation
+
+1. ./configure
+	If you would like to use default options just type 'configure'
+	To see more options type 'configure --help'
+
+2. make
+	Compiling...
+3. make install
+	Installing...
+4. make clean
+	Removing objects files...
+
+copy images and library directory that under htmltemp directory to isoqlog output directory 
+5. cp -pr ./htmltemp/images ./htmltemp/library isoqlogoutputdir/
+
+6. You can run isoqlog more than once in a day, though you must run at least once before 00:00 
+(i.e. 23:58) to get current day's statistics.
+
+7. If you're using postfix, sendmail or qmail-syslog, it is strongly suggested you rotate
+   your log files to get the data healthier.
+
+# crontab -e
+
+58 * * * * /usr/local/bin/isoqlog 1>/dev/null 2>/dev/null
+this will run isoqlog every hour at 58. minute
+
+That's all
+IMPORTANT NOTE: If you type make and get an error like:
+Makefile line:XXX need an operator, you better use gmake, not make.
+
+- Files
+	When you untar package, you should see following files and directories:
+
+	Makefile -> You know what is this.
+	configure -> Prepares your system for custom installations.
+	isoqlog.conf -> Configuration file. (more isoqlog.conf)
+	isoqlog.domains -> Domains
+	htmltemp -> Contains HTML output templates. Edit them if you would like.
+	
+- After installation
+	
+	Don't forget! If you configure your system with 'configure --prefix=install_dir' 
+edit isoqlog.conf and change prefix variables. Also change others.
+        
+NOTE: 
+	 An important thing to note here is that; keep the size of your log file large.
+	 if you're using qmail with multilog, you can set this in the qmail-send/log/run
+	 file with the s (size) parameter like this: (all in one line) 
+	 #!/bin/sh 
+	 exec /usr/local/bin/setuidgid  \
+	 qmaill /usr/local/bin/multilog  t s5000000 \
+	  /var/log/qmail
+
+	  if you're using syslog, change the rotate size.
+
+
+PROBLEMS
+
+If you have trouble with GNU style configuration/installation please try Makefile.std
+
+cp Makefile.std Makefile
+make
+make install

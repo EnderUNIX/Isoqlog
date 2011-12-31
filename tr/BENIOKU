@@ -1,0 +1,54 @@
+	                           Isoqlog
+	                      Versiyon  2.2-BETA
+
+
+Isoqlog Nedir?
+
+Isoqlog  C dilinde yazilmis bir MTA log analiz programidir. Qmail, Postfix, Senmail log dosyalarini tarayarak gerekli istatistiklerin  HTML formatinda tarayicilarda gorulmesini saglar. Istatistikler Gonderici, Alici, Toplam gonderilen mail ve buyuklugune ve sayisina gore tutulmanin yanisira gunluk, aylik ve yillik en cok kullanilan email ve domain ciktisinda yer alir. 
+
+Ozellikler
+
+
+Coklu MTA destegi (qmail (multilog and syslog), postfix, sendmail, exim) 
+Coklu domain destegi. Ana domain hakkinda detayli istatistik cikarmanin yani sira istenen domainler icin detayli istatistik cikartabilir. 
+Genel mail iletim hatalarinin istatistiklerini gosterir. 
+Her bir domaindeki userlar  icin toplam gelen ve giden mail istatistiklerini tutar.   
+Sunucunun aktivitesini gelen, giden mail aktivitesi, domain icin toplam giden ve gelen mail istatistilerini tutar ve gosterir.
+Gunluk, aylik ve yillik istatistikler daha sonraki incelemer icin tutulur.    
+Coklu dil destegi ( Turkish, English, German,Portuguese,Spanish ,Italian,french, Swedish, Dutch, Polish, Norwegian, Russian, Czech) 
+
+
+
+
+
+
+
+
+
+  En Son haberler
+  ------------------
+
+ Detaylar http://www.enderunix.org/isoqlog adresinde bulunabilir.
+
+
+  Kurulum
+  ------------
+
+  Kurulum icin KURULUM dokumanini okuyunuz
+
+
+  Lisans
+  ---------
+
+  Lutfen KOPYALAMA dosyasini okuyunuz.
+
+
+
+
+
+Isoqlog  FreeBSD 4.9-Stable  Solaris 2.8(Sparc) Slackware Linux, Redhat 6.2,7.2 ,8.0, 9.0 OpenBSD-3.2 isletim 
+sistemlerinde test edilmis ve problemsiz calismistir.
+
+EnderUNIX Software Development Team -- http://www.enderunix.org
+
+Thu Apr 29 11:02:33 EEST 2004

@@ -1,0 +1,51 @@
+Isoqlog 2.2-BETA Kurulumu
+
+- Kurulum
+
+1. ./configure
+	Eger varsayilan opsiyonlari istiyorsaniz sadece "configure" (tirnak isaretleri yok)
+        diyebilirsiniz. Daha fazla bilgi icin 'configure --help' yaziniz.
+
+2. make
+	Derleniyor...
+3. make install
+	Kuruluyor...
+4. make clean
+ 	Object dosyalari siliniyor...
+
+
+5. cp -pr ./htmltemp/images ./htmltemp/library isoqlogciktidizini/
+    images ve library dizinini ustteki gibi hedef sizin isoqlogciktidizini olacak sekilde   
+     kopyalayiniz.
+
+6. Isoqlog'u ayni gun icersinde birden fazla sekilde calistirabilirsiniz. Ama
+ o gunku istatistikleri almak icin  mutlaka saat 00:00  (mesela 23:58) once bir defa calistirilmalidir.
+
+7. Eger postfix, sendmail ya da qmail-syslog kullaniyorsaniz log dosyalarinizi rotate etmenizi daha saglikli bir sonuc almaniz icin oneririz. 
+
+# crontab -e
+
+58 * * * * /usr/local/bin/isoqlog 1>/dev/null 2>/dev/null
+
+Ustteki isoqlog'u her saat'in 58. dakikasinda calistiracaktir
+
+
+Hepsi bu kadar
+Onemli NOT: Eger assagidaki gibi bir hata aliyorsaniz:
+Makefile line:XXX need an operator,  make yerine gmake kullanin. 
+
+- Dosyalar
+	Paketi acinda su dizinler ve dosyalar acilacaktir: 
+
+	Makefile -> Ne oldugunu zaten biliyorsunuz.
+	configure -> Bununda ne oldugu bilinmektedir.
+	isoqlog.conf -> Konfigurasyon dosyasi. (more isoqlog.conf)
+	htmltemp -> HTML cikti template'lerini icerir. Istediginiz gibi degistirebilirsiniz 
+	
+- Kurulumdan sonra
+	
+	Eger isoqlog'u  'configure --prefix=install_dir' ile kurarsaniz 
+        isoqlog.conf dosyasinda prefix degiskenini ve diger degiskenleri degistirmeyi         unutmayin.
+        
+
+Thu Apr 29 11:04:54 EEST 2004

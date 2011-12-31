@@ -1,0 +1,25 @@
+##Thanks to  
+#Clemens Hermann <haribeau@gmx.de>
+# Edson Lima Monteiro <boni@usp.br>
+# fixes by Andreas Rust <rust@webnova.de>
+L_Average = "Durchschnitt"
+L_Creationtime = "Erstellungsdatum"
+L_Daily = "T&auml;glich"
+L_Day = "Tag"
+L_Domain = "Domain"
+L_Encoding = "iso-8859-1"
+L_Mail = "Mail"
+L_Main_Page = "Startseite"
+L_Month = "Monat"
+L_Monthly = "Monatlich"
+L_Number = "Number"
+L_Received = "empfangen"
+L_Receiver = "Empf&auml;nger"
+L_Sender = "Absender"
+L_Sent = "versandt"
+L_Size = "Gr&ouml;sse"
+L_Stats = "Statistiken"
+L_Top = "Top"
+L_Total = "Gesamt"
+L_Yearly = "Jahres"
+L_Year = "Jahr"

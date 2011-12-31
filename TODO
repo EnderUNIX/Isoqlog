@@ -1,0 +1,21 @@
+			ISOQLOG TODO
+			************
+
+
+* Fabrice LABORIE reports:
+  is a domain is listed in Top 100 Receiver  Domain but is NOT in Top 100
+  domains Sender it will not appear in the Top 100   Domain although it 
+  potentially received mails alone that some other send+receive !
+  This is probably true for some high traffic domain for which a server
+  acts as a relay. ( MX). So it's not really a bug, but probably more a 
+  feature request ...
+* Tomasz Klim reports:[ismail]
+  I need to hide extra recipient, defined in extra.h.
+* Old days' log processing.[ismail]
+* Callculate Total traffic [ismail]
+* Ignore user defined  mail addresses such as postmaster, root ...
+* Common error reports.
+* Apply FreeBSD coding style to code.
+* Image representation of statistics using GD library
+* Performance optimization
+* Fix Bugs. (no need to mention?)

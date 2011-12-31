@@ -1,0 +1,14 @@
+#isoqlog  Configuration file 
+
+logtype		= "postfix" #log type qmai-multilog, qmail-syslog, sendmail, postfix
+logstore	= "/var/log/mailllog"
+domainsfile = "/usr/local/etc/isoqlog.domains"
+outputdir	= "/usr/local/www/data/isoqlog" # html output directory
+htmldir		= "/usr/local/share/isoqlog/htmltemp"
+langfile	= "/usr/local/share/isoqlog/lang/turkish"
+hostname	= "enderunix.org"
+
+maxsender   = 100	
+maxreceiver = 100	
+maxtotal    = 100  
+maxbyte     = 100 

@@ -1,0 +1,116 @@
+
+			Isoqlog Version History
+-  Development
+
+
+-  Version 2.2-BETA April 29, 2004
+   * Postfix virtual domain handling support
+   * Parser module re-written, many functionality and security fixes.
+   * The quick link added in Domain's and General's homepages that is about last day statistics.
+   * Some html's name has been changed.
+   * Incorporated Steve Crowder's [steve at crowders dot org] tarball (about
+     validated HTML). 
+     All Html files should be valid HTML 4.01 now!.
+   * L_Encoding is processed, and has a meaning now. It's processed according 
+     to the lang file. 
+     Deafult encoding is iso-8859-1.
+   * Some cosmetic fixes on HTML template files, and isoqlog.conf by Dan 
+     Langille [dan at langille dot org]
+
+
+-  Version 2.1.1 October 14, 2003
+   * Exim MTA support 
+     by Marco Erra <mare at erra.myip.org>
+   * Czech language support by Lukas Maly im at lukasmaly.net
+   * Romanian language translation by Gelu.Constantin at anofm.ro
+   * missing fclose()'s added. Thanks manu - manu at asp.be
+   * Danish translation by "Christian Kurek" <archdandy at spar-es dot dk>
+   * a parser bug was patched by "Koh Swee Meng" <swee_meng ~  phoenix-gamestudios.com> Parser.c:44
+   * Autotool scripts written from scratch
+
+
+-  Version 2.1 January 03, 2003
+   * Some more lang files
+   * bugfixes and patches from 2.0-current are merged into 
+     release branch.
+
+-  Version 2.0-current  July 17, 2002
+
+   * Postfix bug fix 
+   * Html.c:1322 "%d" -> "%d/"
+
+-  Version 2.0  July 16, 2002
+
+   * lowercase function bug is fixed 
+   * Language support is activated
+   * Configuration script is corrected
+   * Up and home buttons is added end of htmls
+
+-  Version 2.0beta June 15, 2002
+
+ * New Isoqlog has been re * written from scratch in C.
+ * Faster log analysis and reporting
+ * Multi * MTA support (Isoqlog can read and analyze qmail(multilog/syslog)
+   sendmail and postfix mail server logs.
+ * HTML Templates. By changing the html templates, and the .css file you 
+   can completely customize the way your stats look.
+ * 
+
+-  Version 1.7   May  17 2001
+
+ * changes made by R. Hutchinson hutch@midwales.com
+ * I have tidied up the html, added some more MBorKBs and created a var called $Debug, which
+   if set to 0 no more screen output
+ * Also more errors displayed
+ * Formatted the code with tabs for ease of reading
+ * The reason for using the perl qq function is that it is easy to drop html into the code 
+   from elsewhere.
+ * Created some more subs:
+   &makehtmlheader
+   &makemenu
+   &display_time
+ * modified existing sub EnderUnixTeam to work in the same way, content unchanged
+
+
+-  Version 1.5 Stable  12 April 2001
+
+ * Spanish language support has been added (Thanks to  cad_vga <cad_vga@yahoo.com>   ) (18 April  2001)
+ * Portuguese language support has been added (Thanks to Edson Lima Monteiro <boni@usp.br> ) (16 April  2001)
+ *  0 MB problem corrected .  if your domains total byte is less than 1MB , it will be printed as a KB 
+ *  * Full Language Support has been added
+ * Strange "<"  characters has been removed :)
+
+-  Version 1.5 	6 Mar  2001
+
+ * All codes are rewritten , now isoqlog is more functional
+ * multilog support has been given 
+ * User based incoming mail  top scores has been added for every your domain that  you define 
+ * User based outgoing mail  top scores has been added for every your domain that  you define 
+ * User based total mail  top scores has been added for every your domain that  you define 
+ * User based  byte  top scores has been added for every your domain that  you define 
+ * Domain based  byte  top scores has been added   
+ *  minus( * ) mail values at top scores part is corrected 
+
+ * Giving Full Langugaga support (15 Mar 2001)
+ * 0 MB values changed to KB when total  byte values less than 1 MB (15 Mar  2001)
+ * More clear Documentation (16 Mar 2001  Thanks to  Murat Balaban ) 
+
+ - Version 1.4 	15 Feb 2001
+
+ * Multi Domains Support added
+ * Displaying Top Domains is corrected
+ * Wrong Date Info is corrected
+
+ - Version 1.3.1  1 October 2000
+
+ * Year bug is fixed .for example if time is 1 February 2001 and your log file is October 2000 
+it will be included in 2001 year output file
+
+ * Version 1.2 28 November 2000
+
+ * Domains bug is fixed . if your domain is qmail.org ,IsoQlog count qmail.org.tr qmail.org.us ,... 
+
+
+http://www.enderunix.org 
+
+Tue Oct 14 08:44:21 EEST 2003
